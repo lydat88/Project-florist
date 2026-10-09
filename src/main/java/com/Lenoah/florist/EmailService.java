@@ -6,5 +6,6 @@ import org.springframework.stereotype.Service;
 public class EmailService {
     public void sendEmail(String message) {
         System.out.println(message);
+        System.out.println("giao hang hoa toc" + message);
     }
 }
