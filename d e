@@ -1,0 +1,51 @@
+warning: in the working copy of 'src/main/java/com/Lenoah/florist/FloristApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/Lenoah/florist/HomeController.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/main/java/com/Lenoah/florist/EmailService.java b/src/main/java/com/Lenoah/florist/EmailService.java[m
+[1mdeleted file mode 100644[m
+[1mindex e9e3fcc..0000000[m
+[1m--- a/src/main/java/com/Lenoah/florist/EmailService.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,11 +0,0 @@[m
+[31m-package com.Lenoah.florist;[m
+[31m-[m
+[31m-import org.springframework.stereotype.Service;[m
+[31m-[m
+[31m-@Service[m
+[31m-public class EmailService {[m
+[31m-    public void sendEmail(String message) {[m
+[31m-        System.out.println(message);[m
+[31m-        System.out.println("giao hang hoa toc" + message);[m
+[31m-    }[m
+[31m-}[m
+[1mdiff --git a/src/main/java/com/Lenoah/florist/HomeController.java b/src/main/java/com/Lenoah/florist/HomeController.java[m
+[1mindex 7ef7693..2042f29 100644[m
+[1m--- a/src/main/java/com/Lenoah/florist/HomeController.java[m
+[1m+++ b/src/main/java/com/Lenoah/florist/HomeController.java[m
+[36m@@ -3,6 +3,7 @@[m [mpackage com.Lenoah.florist;[m
+ import org.springframework.stereotype.Controller;[m
+ import org.springframework.web.bind.annotation.RequestMapping;[m
+ [m
+[32m+[m
+ @Controller[m
+ public class HomeController {[m
+     @RequestMapping("/")[m
+[1mdiff --git a/src/main/java/com/Lenoah/florist/OrderService.java b/src/main/java/com/Lenoah/florist/OrderService.java[m
+[1mdeleted file mode 100644[m
+[1mindex 040492f..0000000[m
+[1m--- a/src/main/java/com/Lenoah/florist/OrderService.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,14 +0,0 @@[m
+[31m-package com.Lenoah.florist;[m
+[31m-[m
+[31m-public class OrderService {[m
+[31m-    private EmailService emailService;[m
+[31m-[m
+[31m-    public OrderService(EmailService emailService) {[m
+[31m-        this.emailService = emailService;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void checkout() {[m
+[31m-        emailService.sendEmail("Thank you for your order!");[m
+[31m-    }[m
+[31m-[m
+[31m-}[m
